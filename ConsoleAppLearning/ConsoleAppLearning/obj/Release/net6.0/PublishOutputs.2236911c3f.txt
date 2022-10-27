@@ -1,0 +1,5 @@
+C:\Published_projects\ConsoleAppLearning.exe
+C:\Published_projects\ConsoleAppLearning.dll
+C:\Published_projects\ConsoleAppLearning.deps.json
+C:\Published_projects\ConsoleAppLearning.runtimeconfig.json
+C:\Published_projects\ConsoleAppLearning.pdb
