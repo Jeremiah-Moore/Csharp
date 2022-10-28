@@ -1,0 +1,1 @@
+C:\Csharp\MathGame\MathGame\MathGame.csproj;x64
