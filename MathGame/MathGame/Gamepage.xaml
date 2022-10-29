@@ -4,19 +4,23 @@
              x:Class="MathGame.Gamepage"
              Title="Gamepage">
     <VerticalStackLayout
-        Padding="200" 
-        Spacing="25" >
-        <Label 
+        Padding="100" 
+        Spacing="25">
+        <VerticalStackLayout
+           x:Name="QuestionArea"
+           Spacing="25">
+            
+            <Label 
             x:Name="QuestionLabel"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             FontSize="32" />
-        <Entry
-            x:Name="Answer"
-            HorizontalOptions="Center" ></Entry>
-        <Entry/>
+            <Entry
+            x:Name="AnswerEntry"
+            HorizontalOptions="Center" >
+            </Entry>
 
-        <Button
+            <Button
             x:Name="SubmitAnswer"
             Text="Answer"
             Clicked="OnAnswerSubmitted"
@@ -25,13 +29,25 @@
             <Label
             x:Name="AnswerLabel"
             VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            FontSize="32"/>
+        </VerticalStackLayout>
 
-
-            <Label
+        <Label
             x:Name="GameOverLabel"
             VerticalOptions="Center"
             HorizontalOptions="Center"/>
-        
+
+        <Button
+            IsVisible="false"
+            x:Name="BackToMenuBtn"
+            Text="Back to Menu"
+            Clicked="OnBackToMenu"
+            HorizontalOptions="Center" />
+
+
+
+
+
     </VerticalStackLayout>
 </ContentPage>

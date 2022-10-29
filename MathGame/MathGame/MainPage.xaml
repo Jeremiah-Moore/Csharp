@@ -5,9 +5,7 @@
     <ContentView>
         <VerticalStackLayout
             Spacing="25"
-            Padding="50"
-            >
-            
+            Padding="50">
             <Label 
                 Text="This is your math game!"
                 FontSize="32"
