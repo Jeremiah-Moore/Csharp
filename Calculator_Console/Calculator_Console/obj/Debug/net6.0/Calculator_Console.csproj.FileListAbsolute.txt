@@ -1,0 +1,15 @@
+C:\Csharp\Calculator_Console\Calculator_Console\bin\Debug\net6.0\Calculator_Console.exe
+C:\Csharp\Calculator_Console\Calculator_Console\bin\Debug\net6.0\Calculator_Console.deps.json
+C:\Csharp\Calculator_Console\Calculator_Console\bin\Debug\net6.0\Calculator_Console.runtimeconfig.json
+C:\Csharp\Calculator_Console\Calculator_Console\bin\Debug\net6.0\Calculator_Console.dll
+C:\Csharp\Calculator_Console\Calculator_Console\bin\Debug\net6.0\Calculator_Console.pdb
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\Calculator_Console.csproj.AssemblyReference.cache
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\Calculator_Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\Calculator_Console.AssemblyInfoInputs.cache
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\Calculator_Console.AssemblyInfo.cs
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\Calculator_Console.csproj.CoreCompileInputs.cache
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\Calculator_Console.dll
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\refint\Calculator_Console.dll
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\Calculator_Console.pdb
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\Calculator_Console.genruntimeconfig.cache
+C:\Csharp\Calculator_Console\Calculator_Console\obj\Debug\net6.0\ref\Calculator_Console.dll

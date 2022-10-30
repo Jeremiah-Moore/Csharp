@@ -13,26 +13,81 @@ namespace MathGame.Properties.Data
             _dbPath = dbPath;
             
         }
+        public void CreateTable()
+        {
+            try
+            {
+                conn = new SQLiteConnection(_dbPath);
+                conn.CreateTable<Game>();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
 
-        public void Init()
-        {
-            conn = new SQLiteConnection(_dbPath);
-            conn.CreateTable<Game>();
-        }
-        public List<Game> GetAllGames()
-        {
-            Init();
-            return conn.Table<Game>().ToList();
-        }
-        public void Add(Game game)
+        internal void Add(Game game)
         {
             conn = new SQLiteConnection(_dbPath);
             conn.Insert(game);
         }
-        public void Delete(int id)
+
+        public List<Game> GetAllGames()
+        {
+            try
+            {
+                CreateTable();
+                return conn.Table<Game>().ToList();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return new List<Game>();
+        }
+
+        internal void Delete(int id)
         {
             conn = new SQLiteConnection(_dbPath);
-            conn.Delete(new { Id = id });
+            conn.Delete(new Game { Id = id });
         }
     }
+    // public void CreateTable(Game game)
+    // {
+    //   try
+    //  {
+    //      conn = new SQLiteConnection(_dbPath);
+    //     conn.CreateTable<Game>();
+    //  }
+    // catch (Exception e)
+    // {
+    //       Console.WriteLine(e.Message);
+    //   }
+    //  }
+    //  public List<Game> GetAllGames()
+    //     {
+    //      try
+    //     {
+    //      CreateTable();
+    //     return conn.Table<Game>().ToList();
+    //  }
+    // catch (Exception ex)
+    //   {
+    //      Console.WriteLine(ex.Message);
+    //  }
+    // return new List<Game>();
+    // }
+
+    // public void Add(Game game)
+    //  {
+    //    conn = new SQLiteConnection(_dbPath);
+    //    conn.Insert(game);
+    // }
+    //  public void Delete(int id)
+    // {
+    //    conn = new SQLiteConnection(_dbPath);
+    //   conn.Delete(new { Id = id });
+    // }
+    //}
 }
